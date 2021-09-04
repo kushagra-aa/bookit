@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,500&display=swap");
+@import url("colors.css");
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--primary2);
+  background: var(--accent);
+}
+
+::selection {
+  color: var(--primary2);
+  background: var(--accent);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: var(--secondary1);
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/* gen css */
+.right {
+  position: absolute;
+  right: 0px;
+}
+.left {
+  position: absolute;
+  left: 0px;
+}
+/* gen css */
+
+body {
+  background: var(--primary1);
+}
+
+nav {
+  background: var(--secondary1);
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 70px;
+}
+nav ul li {
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--primary1);
+  font-size: 1.5rem;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.title:hover {
+  color: var(--secondary2);
+}
+
+.nav-item {
+  top: 20px;
+}
+
+.nav-item:hover {
+  color: var(--primary3);
+}
+
+.nav-1 {
+  margin-left: 1.5rem;
+}
+.nav-2 {
+  margin-left: 8rem;
+}
+
+.nav-3 {
+  margin-right: 8rem;
+}
+.nav-4 {
+  margin-right: 1.5rem;
+}
