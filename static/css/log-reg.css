@@ -1,0 +1,100 @@
+.login,
+.reg {
+  background: url("../assets/media/images/bg/log-reg.png");
+  width: 1231px;
+  height: 550px;
+  filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.reg {
+  background: url("../assets/media/images/bg/reg.png");
+  height: 900px;
+  margin: 4em;
+}
+.l,
+.r {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+}
+.r {
+  position: relative;
+  left: 60px;
+}
+
+.log-reg-tit {
+  position: absolute;
+  width: 389px;
+  height: 100px;
+  left: 285px;
+  top: 24px;
+  color: var(--primary3);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.23em;
+}
+
+.log-reg-form {
+  height: 225px;
+  justify-content: space-evenly;
+  position: relative;
+  left: 45px;
+}
+.reg-form {
+  height: 620px;
+}
+.log-reg-form label {
+  color: var(--primary3);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.205em;
+}
+input.log-reg-in {
+  width: 380px;
+  height: 50px;
+  padding: 0.5rem;
+  background: var(--primary2);
+  color: var(--primary1);
+  border: 1px solid var(--primary3);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+}
+.log-reg-btn {
+  height: 2.5rem;
+  width: 20.6rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+.log-reg-se-btn {
+  height: 2.5rem;
+  width: 23.7rem;
+  margin-top: 1rem;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.445em;
+  text-transform: uppercase;
+  position: relative;
+  left: 45px;
+}
+.reg-se-btn {
+  letter-spacing: 0.34em;
+}

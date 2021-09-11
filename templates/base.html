@@ -5,19 +5,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {%comment %} bootstrap cdns {% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    {% comment %} my styles {% endcomment %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% comment %} favicon links {% endcomment %} 
     <link rel="apple-touch-icon" sizes="180x180" href="{% static "assets/favicon/apple-touch-icon.png" %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static "assets/favicon/favicon-32x32.png" %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static "assets/favicon/favicon-16x16.png" %}">
      <link rel="manifest" href="{% static "assets/favicon/site.webmanifest" %}">
-    {%comment %} bootstrap cdns {% endcomment %}
     <title>Book-IT</title>
   </head>
   <body>
-    {% include 'nav.html' %}
-    <center>
-    <h1>HELLO WORLD</h1>
-    </center>
+    {% block nav %}
+      {% include 'nav.html' %}
+    {% endblock  %}
+    {% comment %} message {% endcomment %}
+    {% if messages %}
+    {% for msg in messages %}
+    <div class="alert alert-{{ msg.tags }} alert-dismissible fade show" role="alert">
+      <strong>!!</strong>
+      {{ msg }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% comment %} end of message {% endcomment %}
+    <div class="containr">
+      {% block home %}
+        {% comment %} home page content {% endcomment %}
+      {% endblock %}
+      {% block signup %}
+        {% comment %} signup page content {% endcomment %}
+      {% endblock %}
+      {% block login %}
+        {% comment %} login page content {% endcomment %}
+      {% endblock %}
+  </div>
+  {% block footer %}
+      {% include 'footer.html' %}
+    {% endblock  %}
+  {%comment %} bootstrap cdns {% endcomment %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>

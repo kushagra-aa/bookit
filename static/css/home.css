@@ -1,0 +1,82 @@
+.home {
+  position: absolute;
+  background: var(--primary2);
+  height: auto;
+  top: 4.37em;
+}
+.hero {
+  background: url("../assets/media/images/bg/hero-bg.png");
+  width: 100vw;
+  height: 650px;
+  padding: 1em;
+}
+.tit {
+  text-transform: uppercase;
+  color: var(--primary1);
+  font-weight: 200;
+  text-align: center;
+  font-size: 3rem;
+}
+.tit .bld {
+  font-weight: 400;
+  color: var(--primary1);
+  display: inline;
+}
+.in-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lt {
+  position: absolute;
+  left: 110px;
+  top: 0;
+}
+.btn-home {
+  position: absolute;
+  left: 70px;
+  top: 330px;
+}
+.rt {
+  position: absolute;
+  left: -35px;
+  top: 50px;
+}
+.hero-ill {
+  position: absolute;
+  width: 402px;
+  height: 405px;
+  left: 1000px;
+  top: 15px;
+}
+.floater {
+  animation: float 6s ease-in-out infinite;
+  box-shadow: none;
+}
+.hero p {
+  color: var(--primary3);
+  position: absolute;
+  width: 524px;
+  height: 145px;
+  left: 0;
+  top: 150px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.17em;
+}
+
+.mid {
+  width: 100vw;
+  height: 650px;
+  padding: 1em;
+}
+.sec {
+  background: url("../assets/media/images/bg/sec-bg.png");
+  width: 100vw;
+  height: 650px;
+  padding: 1em;
+}

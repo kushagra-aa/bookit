@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block login %}
+<div class="login">
+<div class="l">
+<div class="log-reg-tit upca">
+login
+</div>
+<div class="in-card">
+<form action="/handleLogin/" method="POST" class="log-reg-form">
+{% csrf_token %}
+  <label for="username">Username</label>
+  <input type="username" id="username" name="username" placeholder="Enter E-Mail" class="log-reg-in"/>
+  <label for="pass">Password</label>
+  <input type="password" id="pass" name="pass" placeholder="Enter Password" class="log-reg-in"/>
+  <button type="submit" class="btn-sec1-acc log-reg-btn">Login</button>
+</form>
+<a href="/signup">
+  <button class="btn-sec2-pri3 log-reg-se-btn">don't have an account?</button>
+</a>
+</div>
+</div>
+<div class="r">
+<img src="{% static 'assets/media/illustrations/Login.svg' %}" alt="">
+</div>
+</div>
+{% endblock  %}

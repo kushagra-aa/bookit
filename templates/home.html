@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% load static %} {% block home %}
+<section class="home">
+  <div class="hero">
+    <div class="tit">
+      Welcome To
+      <div class="bld">Book It</div>
+    </div>
+    <div class="in-hero">
+      <div class="lt">
+        <p class="cap">redefining house hunting!</p>
+        <button class="btn-acc-pri2 btn-home">Let’s find a home that’s perfect for you!</button>
+      </div>
+      <div class="rt">
+        <img
+          src="{% static 'assets/media/illustrations/hero-floater.svg' %}"
+          class="hero-ill floater"
+        />
+        <img
+          src="{% static 'assets/media/illustrations/hero-unfloater.svg' %}"
+          class="hero-ill unfloater"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="mid">
+    Here at Book It, we help you discover a place you'll love to live. Directly
+    contact the owner, no middle man required.
+  </div>
+  <div class="sec"></div>
+</section>
+{% endblock %}

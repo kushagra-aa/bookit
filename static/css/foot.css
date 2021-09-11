@@ -1,0 +1,19 @@
+footer {
+  background: var(--secondary1);
+  width: 94.97rem;
+  height: 2.5rem;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: inherit;
+  bottom: 0px;
+  z-index: 1;
+}
+.copy {
+  color: var(--primary1);
+}
+
+footer a {
+  color: var(--secondary2);
+}
