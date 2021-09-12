@@ -10,7 +10,7 @@
     <li><a href="/" class="title"> Book It </a></li>
     {% if user.is_authenticated %}
     <li class="right nav-3 nav-item">
-     Welcome {{request.user}}
+     Welcome {{request.actype}} {{request.user}}
     </li>
     <li>
       <a href="/logout" class="right nav-4 nav-item"> logout</a>

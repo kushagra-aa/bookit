@@ -21,6 +21,7 @@ def handleLogin(request):
         user = authenticate(username=username, password=pass1)
         if user is not None:
             auth_login(request, user)
+            # print(user.actype)
             messages.success(request, "Successfully Logged In")
             return redirect('home')
         else:
@@ -40,6 +41,7 @@ def handleSignup(request):
         username = request.POST['username']
         name = request.POST['name']
         email = request.POST['email']
+        actype = request.POST['ac-type']
         pass1 = request.POST['pass']
         pass2 = request.POST['pass2']
         contact = request.POST['contact']
@@ -66,6 +68,7 @@ def handleSignup(request):
         myuser.name = name
         myuser.contact = contact
         myuser.add = add
+        myuser.actype = actype
         myuser.save()
 
         # redirect user to homepage
