@@ -1,0 +1,102 @@
+.rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.room {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 30px 40px;
+
+  width: 1280px;
+  height: 260px;
+
+  background: var(--primary2);
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.room-img {
+  width: 300px;
+  height: 192px;
+  border-radius: 5px;
+}
+.room-right {
+  width: 870px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.room-row-1,
+.room-row-2,
+.room-row-3 {
+  width: 870px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.room-row-1 {
+  justify-content: space-between;
+}
+.room-city-con,
+.room-price-con {
+  display: flex;
+  flex-direction: row;
+}
+.room-city,
+.room-price {
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.room-city-name,
+.room-rate {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.room-row-2 {
+  justify-content: center;
+}
+.room-size,
+.room-at,
+.room-address {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--accent);
+}
+.room-size {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: right;
+}
+.room-at,
+.room-address {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+.room-address {
+  font-weight: 400;
+}
+.room-row-3 {
+  justify-content: space-around;
+}
+.room-contact,
+.room-view-detials {
+  height: 40px;
+  width: 250px;
+}

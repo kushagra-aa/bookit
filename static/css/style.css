@@ -6,6 +6,9 @@
 @import url("foot.css");
 @import url("home.css");
 @import url("log-reg.css");
+@import url("view-rooms.css");
+@import url("room.css");
+@import url("seller.css");
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -32,4 +35,24 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.float {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  right: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--primary3);
+  color: var(--secondary1);
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px rgba(46, 0, 65, 0.253);
 }

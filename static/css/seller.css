@@ -1,0 +1,72 @@
+.seller-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 368px;
+  width: 800px;
+  height: 600px;
+  background: var(--primary2);
+  box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  gap: 30px;
+}
+
+.seller-con img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #011627;
+  box-sizing: border-box;
+  filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.4));
+  border-radius: 200px;
+}
+
+.sel-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seller-con a {
+  text-decoration: none;
+}
+.seller-con h1 {
+  font-size: 55px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: capitalize;
+  color: var(--accent);
+}
+.seller-con h2 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: var(--primary3);
+}
+.seller-con h3 {
+  font-size: 40px;
+  line-height: 47px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: lowercase;
+  color: var(--secondary2);
+}
+
+.seller-call {
+  height: 3.7rem;
+  width: 25rem;
+  font-size: 35px;
+  letter-spacing: 15px;
+  text-transform: capitalize;
+}

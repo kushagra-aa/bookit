@@ -88,3 +88,11 @@ def handleLogout(request):
 
 def rooms(request):
     return render(request, "user/view-rooms.html")
+
+
+def room(request):
+    return render(request, "user/room.html")
+
+
+def seller(request):
+    return render(request, "seller/seller.html")
