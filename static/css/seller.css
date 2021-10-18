@@ -10,6 +10,7 @@
   box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   gap: 30px;
+  margin-bottom: 2em;
 }
 
 .seller-con img {

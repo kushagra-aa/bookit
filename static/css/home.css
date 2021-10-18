@@ -1,5 +1,5 @@
 .home {
-  position: absolute;
+  position: sticky;
   background: var(--primary2);
   height: auto;
   top: 4.37em;
@@ -50,8 +50,13 @@
   top: 15px;
 }
 .floater {
+  left: 1135px;
+  top: 10px;
   animation: float 6s ease-in-out infinite;
   box-shadow: none;
+  width: 273.27px;
+  height: 400px;
+  z-index: 1;
 }
 .hero p {
   color: var(--primary3);
@@ -71,12 +76,82 @@
 
 .mid {
   width: 100vw;
-  height: 650px;
+  height: 200px;
   padding: 1em;
+}
+.mid p {
+  margin-top: 1.3em;
+  color: var(--primary3);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 145.9%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
 }
 .sec {
   background: url("../assets/media/images/bg/sec-bg.png");
   width: 100vw;
-  height: 650px;
+  height: 950px;
   padding: 1em;
+}
+
+.sec,
+.sec-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-cards {
+  position: relative;
+  top: 70px;
+  gap: 10em;
+}
+.floating {
+  animation: float 8s ease-in-out infinite;
+}
+.sec-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 500px;
+  height: 650px;
+  border-radius: 20px;
+  filter: drop-shadow(3px 4px 15px rgba(0, 0, 0, 0.2));
+  background: var(--primary2);
+}
+
+.card-ill {
+  width: 375px;
+  height: 300px;
+}
+
+.card-float {
+  position: absolute;
+  top: 49px;
+  left: 55px;
+  width: 375px;
+  height: 269px;
+}
+
+.sec-card h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.sec-card p {
+  color: var(--secondary2);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }

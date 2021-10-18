@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 
 .float {
@@ -51,8 +52,15 @@ body {
   font-weight: bold;
   text-decoration: none;
   background-color: var(--primary3);
-  color: var(--secondary1);
+  color: var(--secondary2);
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 3px rgba(46, 0, 65, 0.253);
+}
+
+.float:hover {
+  width: 80px;
+  height: 80px;
+  filter: brightness(120%);
+  color: var(--secondary1);
 }

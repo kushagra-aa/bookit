@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block home %}
+{% extends 'base.html' %}
+{% load static %}
+{% block home %}
 <section class="home">
   <div class="hero">
     <div class="tit">
@@ -8,24 +10,69 @@
     <div class="in-hero">
       <div class="lt">
         <p class="cap">redefining house hunting!</p>
-        <button class="btn-acc-pri2 btn-home">Let’s find a home that’s perfect for you!</button>
+        <a href="view-rooms">
+          <button class="btn-acc-pri2 btn-home">
+            Let’s find a home that’s perfect for you!
+          </button>
+        </a>
       </div>
       <div class="rt">
         <img
-          src="{% static 'assets/media/illustrations/hero-floater.svg' %}"
+          src="{% static 'assets/media/illustrations/hero-floater.png' %}"
           class="hero-ill floater"
         />
         <img
-          src="{% static 'assets/media/illustrations/hero-unfloater.svg' %}"
+          src="{% static 'assets/media/illustrations/hero-unfloater.png' %}"
           class="hero-ill unfloater"
         />
       </div>
     </div>
   </div>
   <div class="mid">
-    Here at Book It, we help you discover a place you'll love to live. Directly
-    contact the owner, no middle man required.
+    <p>
+      Here at Book It, we help you discover a place you'll love to live.
+      <br />
+      Directly contact the owner, no middle man required.
+    </p>
   </div>
-  <div class="sec"></div>
+  <div class="sec">
+    <div class="sec-cards">
+      <div class="sec-card floating">
+        <div class="sec-ill">
+          <img
+            src="{% static 'assets/media/illustrations/apartment-floater.png' %}"
+            class="card-ill card-float floater"
+          />
+          <img
+            src="{% static 'assets/media/illustrations/apartment-unfloater.png' %}"
+            class="card-ill unfloater"
+          />
+        </div>
+        <h3>Find Your Perfect Home</h3>
+        <p>
+          When you work with a real estate agent, you'll get selling support at
+          every step, from prepping and listing your home to marketing that gets
+          buyers in the door.
+        </p>
+      </div>
+      <div class="sec-card floating">
+        <div class="sec-ill">
+          <img
+            src="{% static 'assets/media/illustrations/roomtop-floater.png' %}"
+            class="card-ill card-float floater"
+          />
+          <img
+            src="{% static 'assets/media/illustrations/roomtop-unfloater.png' %}"
+            class="card-ill unfloater"
+          />
+        </div>
+        <h3>Rent A Home</h3>
+        <p>
+          We’re creating a seamless online experience – from shopping on the
+          largest rental network, to applying, to paying rent.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}

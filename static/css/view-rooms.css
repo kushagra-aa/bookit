@@ -69,6 +69,7 @@
 }
 .room-row-2 {
   justify-content: center;
+  gap: 10px;
 }
 .room-size,
 .room-at,
