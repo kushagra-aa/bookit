@@ -1,0 +1,38 @@
+.add-room {
+  background: url("../assets/media/images/bg/add-room.png");
+  height: 950px;
+  margin: 5rem;
+}
+.add-room-tit {
+  color: var(--primary2);
+  left: 200px;
+}
+.add-room-form {
+  height: 750px;
+}
+.add-room-form label {
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: var(--primary2);
+}
+#description {
+  width: 380px;
+  height: 100px;
+  padding: 0.5rem;
+  background: var(--primary2);
+  color: var(--primary1);
+  border: 1px solid var(--primary3);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.205em;
+}
+
+.add-room .r img {
+  width: 316px;
+  height: 324px;
+}

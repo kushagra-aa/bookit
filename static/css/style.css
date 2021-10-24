@@ -9,6 +9,7 @@
 @import url("view-rooms.css");
 @import url("room.css");
 @import url("seller.css");
+@import url("addroom.css");
 
 ::-moz-selection {
   /* Code for Firefox */

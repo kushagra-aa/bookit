@@ -19,7 +19,7 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, User
 #         return self.email
 
 
-class room(models.Model):
+class Room(models.Model):
     # model for rooms
     def __str__(self) -> str:
         return self.address

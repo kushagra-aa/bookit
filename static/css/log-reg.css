@@ -1,5 +1,6 @@
 .login,
-.reg {
+.reg,
+.add-room {
   background: url("../assets/media/images/bg/log-reg.png");
   width: 1231px;
   height: 550px;

@@ -76,6 +76,7 @@
 .room-det-lower {
   display: flex;
   padding: 1em;
+  width: 98vw;
   flex-direction: column;
 }
 .room-det-over h1,

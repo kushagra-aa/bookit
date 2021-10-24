@@ -3,19 +3,18 @@
   <div class="room-det-upper">
   <div class="room-det-up-left">
     <img
-      src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
-      alt=""
+      src="{{room.image}}"
       class="room-det-thumb"
     />
   </div>
   <div class="room-det-up-right">
-    <div class="room-det-size">2BHK Apartment</div>
-    <div class="room-det-address">Rajajipuram,Lucknow</div>
+    <div class="room-det-size">{{room.room_size}}</div>
+    <div class="room-det-address">{{room.address}}</div>
     <div class="room-price-con">
-      <div class="room-det-price">Rs.20,000</div>
+      <div class="room-det-price">Rs.{{room.rate}}</div>
       <div class="room-det-rate">/month</div>
     </div>
-    <div class="room-det-area">530 sq.ft</div>
+    <div class="room-det-area">{{room.area}} sq.ft</div>
     <a href="/seller">
     <button class="btn-acc-pri1 room-det-contact">Contact Seller</button>
     </a>
@@ -28,29 +27,29 @@
       <div class="room-det-over-cont-l">
         <div class="room-det-over-city room-det-over-vl">
           <h3>city:</h3>
-          <p>lucknow</p>
+          <p>{{room.city}}</p>
         </div>
         <div class="room-det-over-rate room-det-over-vl">
           <h3>rate:</h3>
-          <p>20,000</p>
+          <p>{{room.rate}}</p>
         </div>
         <div class="room-det-over-floor room-det-over-vl">
           <h3>floor:</h3>
-          <p>3rd</p>
+          <p>{{room.floor}}</p>
         </div>
       </div>
       <div class="room-det-over-cont-r">
         <div class="room-det-over-fur room-det-over-vl">
           <h3>furnishing:</h3>
-          <p>unfurnished</p>
+          <p>{{room.furnishing}}</p>
         </div>
         <div class="room-det-over-area room-det-over-vl">
           <h3>area:</h3>
-          <p>530 Sq.Ft</p>
+          <p>{{room.area}}Sq.Ft</p>
         </div>
         <div class="room-det-over-park room-det-over-vl">
           <h3>parking:</h3>
-          <p>NA</p>
+          <p>{{room.parking}}</p>
         </div>
       </div>
     </div>
@@ -58,10 +57,7 @@
     <div class="room-det-des room-det-contr">
       <h1>description</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Culpa nostrum
-        vero fugiat dicta veniam placeat porro natus perspiciatis   voluptates esse.
-        Voluptatem nam odio perspiciatis. Necessitatibus accusamus  deleniti
-        dolorem perspiciatis maxime.
+        {{room.description}}
       </p>
     </div>
     <div class="room-det-sel room-det-contr">
