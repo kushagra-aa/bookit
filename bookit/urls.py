@@ -5,3 +5,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('rooms.urls')),
 ]
+
+handle404 = 'rooms.views.error_404_view'

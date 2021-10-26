@@ -44,8 +44,20 @@ Built with 🤍 For You!
   - <img src="static/assets/media/images/Bootstrap.png"   width="40" alt="Bootstrap">
   - <img src="static/assets/media/images/Django.png"  width="40" alt="Django">
 - ### Tools
+
   - <img src="static/assets/media/images/Figma.png"   width="40" alt="Figma">
+
   - <img src="static/assets/media/images/vscode.png" width="40" alt="VS Code">
+
+- ### Concepts
+  - Custom User Model
+  - Templates
+  - CSS Animations
+  - 404 Error Handeling
+  - Custom Models
+  - Django Authentication
+  - Login-Logout
+  - Django Admin
 
 ## Run Locally:
 
@@ -100,3 +112,5 @@ python manage.py runserver
 ```
 
 and open localhost:8000 on your browser to view the app.
+
+> Debug is set to false, may need to run `py manage.py runserver --insecure`

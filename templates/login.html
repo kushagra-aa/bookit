@@ -9,8 +9,8 @@ login
 <div class="in-card">
 <form action="/handleLogin/" method="POST" class="log-reg-form">
 {% csrf_token %}
-  <label for="username">Username</label>
-  <input type="username" id="username" name="username" placeholder="Enter E-Mail" class="log-reg-in"/>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter E-Mail" class="log-reg-in"/>
   <label for="pass">Password</label>
   <input type="password" id="pass" name="pass" placeholder="Enter Password" class="log-reg-in"/>
   <button type="submit" class="btn-sec1-acc log-reg-btn">Login</button>

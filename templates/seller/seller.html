@@ -3,13 +3,13 @@
     <div class="seller-con">
       <img src="https://images.unsplash.com/photo-1607152571560-ac7611d9abfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1964&q=80G0DqpsRQRoc" alt="seller image" class="seller-img" />
       <div class="sel-det">
-      <h1 class="seller-name">Mohan raj</h1>
-      <h2 class="seller-name">9087456123</h2>
-      <a href="mohan@seller.com">
-      <h3 class="seller-name">mohan@seller.com</h3>
+      <h1 class="seller-name">{{seller.name}}</h1>
+      <h2 class="seller-name">{{seller.contact}}</h2>
+      <a href="mailto:{{seller.email}}">
+      <h3 class="seller-name">{{seller.email}}</h3>
       </a>
       </div>
-      <a href="tel:+919087456123">
+      <a href="tel:+91{{seller.contact}}">
       <button class="btn-acc-pri1 seller-call">call him!</button>
       </a>
     </div>

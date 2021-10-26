@@ -9,3 +9,18 @@
     transform: translatey(20px);
   }
 }
+@keyframes zap {
+  0% {
+    /* width: 717.04px; */
+    transform: scale(1, 1);
+  }
+  50% {
+    /* width: 691.2px; */
+    /* height: 535px; */
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    /* width: 717.04px; */
+    transform: scale(1, 1);
+  }
+}

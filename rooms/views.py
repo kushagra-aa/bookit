@@ -1,7 +1,7 @@
 from django.http.response import Http404
 from . import models
 from django.shortcuts import render, redirect, HttpResponse
-from django.contrib.auth.models import User
+from users.models import MyUser
 from django.contrib.auth import authenticate, logout
 from django.contrib.auth import login as auth_login
 from django.contrib import messages
@@ -18,9 +18,9 @@ def login(request):
 
 def handleLogin(request):
     if request.method == 'POST':
-        username = request.POST['username']
+        email = request.POST['email']
         pass1 = request.POST['pass']
-        user = authenticate(username=username, password=pass1)
+        user = authenticate(email=email, password=pass1)
         if user is not None:
             auth_login(request, user)
             # print(user.actype)
@@ -40,37 +40,22 @@ def signup(request):
 
 def handleSignup(request):
     if request.method == 'POST':
-        username = request.POST['username']
         name = request.POST['name']
         email = request.POST['email']
         actype = request.POST['ac-type']
         pass1 = request.POST['pass']
         pass2 = request.POST['pass2']
         contact = request.POST['contact']
-        add = request.POST['add']
-
+        is_seller = False
         # check for inputs
-        if not username.islower():
-            messages.error(
-                request, "Username should only be in lower case")
-            return redirect('signup')
-        if len(username) > 10:
-            messages.error(
-                request, "Username should only contain 10 characters")
-            return redirect('signup')
-        if not username.isalnum():
-            messages.error(
-                request, "Username should only contain letters and numbers")
-            return redirect('signup')
         if pass1 != pass2:
             messages.error(request, "Passwords do not match")
             return redirect('signup')
+        if actype == 'seller':
+            is_seller = True
         # add user to models
-        myuser = User.objects.create_user(username, email, pass1)
-        myuser.name = name
-        myuser.contact = contact
-        myuser.add = add
-        myuser.actype = actype
+        myuser = MyUser.objects.create_user(
+            email, name, contact, is_seller, pass1)
         myuser.save()
 
         # redirect user to homepage
@@ -85,7 +70,7 @@ def handleSignup(request):
 def handleLogout(request):
     logout(request)
     messages.success(request, "Successfully Logged out")
-    return redirect("rooms:home")
+    return redirect("/")
 
 
 def rooms(request):
@@ -104,12 +89,20 @@ def room(request, room_id):
     return render(request, "user/room.html", {'room': room})
 
 
-def seller(request):
-    return render(request, "seller/seller.html")
+def seller(request, seller_id):
+    try:
+        seller = MyUser.objects.get(name=seller_id)
+    except MyUser.DoesNotExist:
+        raise Http404("Seller Does Not Exist")
+    return render(request, "seller/seller.html", {'seller': seller})
 
 
 def addRoom(request):
     return render(request, "seller/add-room.html")
+
+
+def error_404_view(request):
+    return render(request, "404.html")
 
 
 def handleRoom(request):
@@ -140,7 +133,7 @@ def handleRoom(request):
         newroom.area = area
         newroom.parking = parking
         newroom.description = description
-        newroom.seller_id = str(request.user)
+        newroom.seller_id = str(request.user.name)
         newroom.save()
 
         # redirect user to homepage

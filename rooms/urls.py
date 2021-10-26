@@ -13,5 +13,5 @@ urlpatterns = [
     path('view-rooms/', views.rooms, name='view-rooms'),
     path('<int:room_id>', views.room, name='room'),
     path('add-room/', views.addRoom, name='add-room'),
-    path('seller/', views.seller, name='seller')
+    path('<str:seller_id>', views.seller, name='seller')
 ]

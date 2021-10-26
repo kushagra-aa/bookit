@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 404 %}
+    <div class="error-l">
+    <h2>perhaps you got a bad link</h2>
+    <p>Click here to go back👇🏻</p>
+    <a href="/">
+            <button type="submit" class="btn-sec1-acc error-btn">Go Home</button>
+        </a>
+    </div>
+    <div class="error-ill-con">
+        <div class="error-floater">
+            <img class="error-zap error-ill" src="{% static 'assets/media/illustrations/404-zap.png' %}" alt="404">
+        </div>
+        <img class="error-ill error-text" src="{% static 'assets/media/illustrations/404-text.png' %}" alt="404">
+        <img class="error-ill error-floater" src="{% static 'assets/media/illustrations/404-floater.png' %}" alt="404">
+        <img class="error-ill error-particle" src="{% static 'assets/media/illustrations/404-particle.png' %}" alt="404">
+    </div>
+{% endblock %}

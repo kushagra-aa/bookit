@@ -9,8 +9,6 @@ signup
 <div class="in-card">
 <form action="/handleSignup/" method="POST" class="log-reg-form reg-form">
 {% csrf_token %}
-  <label for="username">Username</label>
-  <input type="text"  id="username" name="username" placeholder="Enter only lowercase & alphanumeric" required class="log-reg-in"/>
   <label for="name">Name</label>
   <input type="text"  id="name" name="name" placeholder="Enter Your Name Here" required class="log-reg-in"/>
   <label for="email">Email</label>
@@ -22,8 +20,6 @@ signup
   <input type="radio" name="ac-type" value="buyer" class="ac-type" checked="checked">Buyer
   <input type="radio" name="ac-type" value="seller" class="ac-type">Seller
   </div>
-  <label for="add">Address</label>
-  <input type="text"  id="add" name="add" placeholder="Enter Your Address Here" required class="log-reg-in"/>
   <label for="pass">Password</label>
   <input type="password"  id="pass" name="pass" placeholder="Enter Password" required class="log-reg-in"/>
   <label for="pass2"> Confirm Password</label>

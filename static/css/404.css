@@ -1,0 +1,57 @@
+.error-l {
+  position: absolute;
+  bottom: 290px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.error-l h2,
+.error-l p {
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--secondary2);
+}
+
+.error-btn {
+  width: 515px;
+  height: 40px;
+  animation: float 8s ease-in-out infinite;
+}
+
+.error-l p {
+  color: var(--primary3);
+}
+
+.error-ill-con {
+  position: relative;
+  bottom: 340px;
+  right: 0px;
+  margin-top: 5rem;
+}
+.error-ill {
+  position: absolute;
+  box-shadow: none;
+  width: 717.04px;
+  height: 555px;
+  z-index: 1;
+}
+
+.error-zap {
+  animation: zap 4s ease-in-out infinite;
+}
+
+.error-floater {
+  animation: float 5s ease-in-out infinite;
+}
+
+.error-particle {
+  animation: float 4s ease-in-out infinite;
+}

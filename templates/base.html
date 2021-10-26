@@ -32,6 +32,9 @@
     {% endif %}
     {% comment %} end of message {% endcomment %}
     <div class="containr">
+      {% block 404 %}
+        {% comment %} 404 error page {% endcomment %}
+      {% endblock  %}
       {% block home %}
         {% comment %} home page content {% endcomment %}
       {% endblock %}
@@ -53,12 +56,16 @@
       {% block addroom %}
         {% comment %} seller page content {% endcomment %}
       {% endblock %}
-    <a href="http://127.0.0.1:8000/admin" class="float">
-    admin
-    </a>
-    <a href="http://127.0.0.1:8000/add-room" class="float" style="left:20px;">
-    add
-    </a>
+    {% if user.is_staff %}
+      <a href="http://127.0.0.1:8000/admin/" class="float">
+        admin
+      </a>
+    {% endif %}
+    {% if user.is_seller %}
+      <a href="http://127.0.0.1:8000/add-room/" class="float" style="left:20px;">
+        add
+      </a>
+    {% endif %}
     </div>
     {% block footer %}
       {% include 'footer.html' %}

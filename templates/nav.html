@@ -5,22 +5,22 @@
       <a href="/" class="left nav-1 nav-item"> home </a>
     </li>
     <li>
-      <a href="/view-rooms" class="left nav-2 nav-item"> view rooms </a>
+      <a href="/view-rooms/" class="left nav-2 nav-item"> view rooms </a>
     </li>
     <li><a href="/" class="title"> Book It </a></li>
     {% if user.is_authenticated %}
     <li class="right nav-3 nav-item">
-     Welcome {{request.actype}} {{request.user}}
+     Welcome {{request.user.name}}
     </li>
     <li>
-      <a href="/logout" class="right nav-4 nav-item"> logout</a>
+      <a href="/logout/" class="right nav-4 nav-item"> logout</a>
     </li>
     {% else %}
     <li>
-      <a href="/login" class="right nav-3 nav-item"> login </a>
+      <a href="/login/" class="right nav-3 nav-item"> login </a>
     </li>
     <li>
-      <a href="/signup" class="right nav-4 nav-item"> signup </a>
+      <a href="/signup/" class="right nav-4 nav-item"> signup </a>
     </li>
     
 

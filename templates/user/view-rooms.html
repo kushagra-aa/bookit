@@ -28,8 +28,8 @@
         <div class="room-address">{{room.address}}</div>
       </div>
       <div class="room-row-3">
-        <a href="/seller">
-        <button class="btn-acc-sec1 room-contact">Contact Seller</button>
+        <a href="{% url 'rooms:seller' room.seller_id %}">
+          <button class="btn-acc-sec1 room-contact">Contact Seller</button>
         </a>
         <a href="{% url 'rooms:room' room.room_id%}">
         <button class="btn-acc-sec1 room-view-detials">View Details</button>
