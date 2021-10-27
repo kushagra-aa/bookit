@@ -4,6 +4,11 @@
 
 [Click Here To Visit](https://github.com/kushagra-aa/multlists)
 
+Book It is a Web Application Built using Python-Django, HTML, CSS, and Bootstrap.
+It is a Room Rental System,
+where a user can register and login, and add their place for a paying guest to find(if they are seller).
+or a buyer/PG can find places near them
+
 A Redefined House Hunting Web Application
 
 Built with 🤍 For You!
@@ -62,7 +67,7 @@ Built with 🤍 For You!
   - Custom User Model
   - Templates
   - CSS Animations
-  - 404 Error Handeling
+  - 404 Error Handling
   - Custom Models
   - Django Authentication
   - Login-Logout
