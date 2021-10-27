@@ -4,8 +4,7 @@
 
 [Click Here To Visit](https://github.com/kushagra-aa/multlists)
 
-Book It is a Web Application Built using Python-Django, HTML, CSS, and Bootstrap.
-It is a Room Rental System,
+Book It is a Web Application a Room Rental System,
 where a user can register and login, and add their place for a paying guest to find(if they are seller).
 or a buyer/PG can find places near them
 
