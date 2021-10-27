@@ -23,16 +23,25 @@ Built with 🤍 For You!
 ## Screenshots:
 
 ![Home Page](https://user-images.githubusercontent.com/68841296/137738972-95a8f799-7a2b-4cf3-adb8-8db0060a21b7.png)
+### Home Page- Hero Section
 
 ![Signup](https://user-images.githubusercontent.com/68841296/137739237-920beaee-52be-436a-ad19-5a189ebb0bb2.png)
+### Signup Page
 
 ![Login](https://user-images.githubusercontent.com/68841296/137739163-59c33625-5e00-4d30-87e7-275243cf9190.png)
+### Login Page
 
 ![All Rooms](https://user-images.githubusercontent.com/68841296/137739110-beabd04f-b55b-471f-a98e-f6032c86a896.png)
+### Rooms Page
 
 ![Room Details](https://user-images.githubusercontent.com/68841296/137739342-b5fdd1ad-dc6a-49b9-b57e-072da1590b7a.png)
+### Room Details Page
 
 ![Seller Detials](https://user-images.githubusercontent.com/68841296/137739380-b60fffb4-75a3-4fed-9bce-82cf5c26ee9b.png)
+### Seller Details Page
+
+![404 Page](https://user-images.githubusercontent.com/68841296/139087971-0d835007-d175-41a3-99bb-130004a7b64c.png)
+### 404 error handling
 
 ## Made Using:
 
